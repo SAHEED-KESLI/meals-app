@@ -8,6 +8,7 @@ export default function Header() {
         alt="A server surrounded by magic sparkles."
         width={48}
         height={48}
+        loading="eager"
       />
       <h1>Welcome to this NextJS Course!</h1>
     </>
