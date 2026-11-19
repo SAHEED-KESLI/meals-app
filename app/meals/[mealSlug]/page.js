@@ -4,9 +4,8 @@ import { notFound } from 'next/navigation';
 import { getMeal } from '@/lib/meals';
 import classes from './page.module.css';
 
-export default async function MealDetailsPage({ params }) {
-  const { mealSlug } = await params;
-  const meal = getMeal(mealSlug);
+export default function MealDetailsPage({ params }) {
+  const meal = getMeal(params.mealSlug);
 
   if (!meal) {
     notFound();
