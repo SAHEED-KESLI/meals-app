@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 import { getMeal } from '@/lib/meals';
+import { deleteMealAction } from '@/lib/actions';
 import classes from './page.module.css';
 
 export async function generateMetadata({ params }) {
@@ -49,6 +50,12 @@ export default async function MealDetailsPage({ params }) {
             __html: meal.instructions,
           }}
         ></p>
+        <form action={deleteMealAction} className={classes.deleteForm}>
+          <input type="hidden" name="slug" value={meal.slug} />
+          <button type="submit" className={classes.deleteButton}>
+            Delete Meal
+          </button>
+        </form>
       </main>
     </>
   );

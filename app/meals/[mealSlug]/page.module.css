@@ -73,6 +73,29 @@
   animation: fade-slide-in-from-bottom 1s ease-out forwards;
 }
 
+.deleteForm {
+  max-width: 60rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.deleteButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #c92a2a, #ff6b6b);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteButton:hover,
+.deleteButton:active {
+  background: linear-gradient(90deg, #a61e1e, #ff4d4d);
+  box-shadow: 0 0 12px rgba(201, 42, 42, 0.8);
+}
+
 .loading {
   font-size: 3rem;
   text-align: center;

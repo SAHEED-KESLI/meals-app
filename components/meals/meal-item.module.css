@@ -55,6 +55,10 @@
 .actions {
   padding: 1rem;
   text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .actions a {
@@ -72,4 +76,27 @@
 .actions a:active {
   background: linear-gradient(90deg, #fd4715, #f9b241);
   box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
+}
+
+.deleteButton {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #c92a2a, #ff6b6b);
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.deleteButton:hover,
+.deleteButton:active {
+  background: linear-gradient(90deg, #a61e1e, #ff4d4d);
+  box-shadow: 0 0 12px rgba(201, 42, 42, 0.8);
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
 }
