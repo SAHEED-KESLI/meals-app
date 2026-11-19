@@ -1,0 +1,10 @@
+.main {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.main h1 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+}

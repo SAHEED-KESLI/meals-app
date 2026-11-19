@@ -1,3 +1,11 @@
+import ShareMealForm from '@/components/meals/share-meal-form';
+import classes from './share.module.css';
+
 export default function ShareMealPage() {
-  return <h1>Share Meal</h1>;
+  return (
+    <main className={classes.main}>
+      <h1>Share Your Meal</h1>
+      <ShareMealForm />
+    </main>
+  );
 }
