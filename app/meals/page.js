@@ -29,10 +29,11 @@ export default function MealsPage() {
           Choose your favorite recipe and cook it yourself. It is easy and fun!
         </p>
         <p className={classes.cta}>
-          <Link href="/meals/share">Share Your Favorite Recipe</Link>
+          <Link href="/meals/share">Add Meal</Link>
         </p>
       </header>
       <main className={classes.main}>
+        <p className={classes.helperText}>Meals added by our community</p>
         <Suspense fallback={<p className={classes.loading}>Fetching meals...</p>}>
           <Meals />
         </Suspense>

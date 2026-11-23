@@ -14,9 +14,9 @@ export default function ShareMealPage() {
     <>
       <header className={classes.header}>
         <h1>
-          Share your <span className={classes.highlight}>favorite meal</span>
+          Add Your <span className={classes.highlight}>Favourite Meal</span>
         </h1>
-        <p>Or any other meal you feel needs sharing!</p>
+        <p>Share your favourite meal with the community. Once you add it, it will appear in the All Meals list for everyone to see.</p>
       </header>
       <main className={classes.main}>
         <form className={classes.form} action={formAction}>

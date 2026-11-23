@@ -7,7 +7,7 @@ export default function MealsFormSubmit() {
 
   return (
     <button disabled={pending}>
-      {pending ? 'Submitting...' : 'Share Meal'}
+      {pending ? 'Submitting...' : 'Add Meal to List'}
     </button>
   );
 }
