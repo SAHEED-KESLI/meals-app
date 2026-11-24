@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import classes from './page.module.css';
 import MealsGrid from '@/components/meals/meals-grid';
+import DeletionToast from '@/components/meals/deletion-toast';
 import { getMeals } from '@/lib/meals';
 
 export const metadata = {
@@ -20,6 +21,9 @@ async function Meals() {
 export default function MealsPage() {
   return (
     <>
+      <Suspense fallback={null}>
+        <DeletionToast />
+      </Suspense>
       <header className={classes.header}>
         <h1>
           Delicious meals, created{' '}

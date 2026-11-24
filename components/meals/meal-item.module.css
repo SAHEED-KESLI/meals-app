@@ -100,3 +100,108 @@
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal {
+  background: linear-gradient(90deg, #2c1e19, #25200f);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.2s ease-out;
+  color: #ddd6cb;
+}
+
+.modal h3 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.modal p {
+  margin: 0 0 1.5rem;
+  color: #b89b84;
+  line-height: 1.5;
+}
+
+.modalActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.cancelButton,
+.confirmButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.cancelButton {
+  background: #454952;
+  color: #ddd6cb;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background: #5a5f6a;
+}
+
+.confirmButton {
+  background: linear-gradient(90deg, #c92a2a, #ff6b6b);
+  color: #ffffff;
+}
+
+.confirmButton:hover:not(:disabled) {
+  background: linear-gradient(90deg, #a61e1e, #ff4d4d);
+  box-shadow: 0 0 12px rgba(201, 42, 42, 0.8);
+}
+
+.cancelButton:disabled,
+.confirmButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.meal:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.deleteButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

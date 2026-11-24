@@ -8,3 +8,38 @@
   list-style: none;
   padding: 0;
 }
+
+.empty {
+  text-align: center;
+  color: #ddd6cb;
+  padding: 4rem 1rem;
+}
+
+.emptyTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+.emptyText {
+  color: #b89b84;
+  margin: 0 0 2rem;
+  font-size: 1.25rem;
+}
+
+.emptyCta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.emptyCta:hover,
+.emptyCta:active {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+  box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
+}

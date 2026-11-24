@@ -40,3 +40,17 @@ body {
   font-weight: 500;
   color: #ddd8d8;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #f9572a;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #f99f2a;
+  outline-offset: 2px;
+}
