@@ -35,10 +35,14 @@
 .image {
   position: relative;
   height: 15rem;
+  overflow: hidden;
 }
 
-.meal img {
+.mealImage {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .content {

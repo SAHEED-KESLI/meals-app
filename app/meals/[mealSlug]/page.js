@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 import { getMeal } from '@/lib/meals';
@@ -33,7 +32,13 @@ export default async function MealDetailsPage({ params }) {
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image src={meal.image} alt={meal.title} fill sizes="480px" />
+          <img
+            src={meal.image}
+            alt={meal.title}
+            className={classes.detailImage}
+            loading="eager"
+            decoding="async"
+          />
         </div>
         <div className={classes.headerText}>
           <h1>{meal.title}</h1>
